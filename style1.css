@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Inconsolata:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  background-color: #2F3C7E;
+}
+
+.logo {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.nav {
+  background-color: #FBEAEB;
+  display: flex;
+  flex-direction: row;
+  gap: 800px;
+  height: 130px;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+ul a:hover {
+  border-bottom: 2px solid black;
+}
+
+.one {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.two {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.three {
+  display: flex;
+  flex-direction: row;
+  gap: 530px;
+}
+
+.three p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.five {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.five p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.five button {
+  padding: 0 30px;
+  border-radius: 8px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.gpa_calculator {
+  border: 3px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 50px;
+  margin-top: 80px;
+}
+
+.gpa_calculator ul button {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.gpa_calculator ul input,
+select {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.cgpa_calculator {
+  border: 3px solid white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 50px;
+}
+
+.cgpa_calculator ul button {
+  padding: 10px 20px;
+  margin-left: 180px;
+  border-radius: 8px;
+}
+
+.cgpa_calculator ul input,
+select {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+.section {
+  background-color: #FBEAEB;
+}
+
+.six {
+  display: flex;
+  flex-direction: column;
+}
+
+.section b {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+.seven {
+  display: flex;
+  flex-direction: column;
+}
+
+.eight {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.h1 p{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.nine {
+  margin-left: 150px;
+  padding-bottom: 80px;
+}
+
+.eight p, .nine p {
+  padding-left: 30px;
+}
+
+.img {
+  padding-top: 300px;
+}

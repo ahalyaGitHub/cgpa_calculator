@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CGPA Calculator</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <div class="nav">
+    <img src="logo.png" alt="logo" width="100px" height="100px" class="logo">
+    <div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#" id="howItWorksLink">How it works?</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Home-->
+  <section class="one">
+    <div>
+      <b class="b1">Welcome to Our <span style="font-size: 30px; display: block;" onmousemove="myMove()" onmouseout="myOut()" id="demo">CGPA Calculator</span></b><br>
+      <p>Our CGPA calculator is a handy tool designed to help students effortlessly calculate their Cumulative
+        Grade Point Average (CGPA). Whether you're a high school student, college student, or university student, our
+        calculator simplifies the process of determining your academic performance.</p><br><br>
+      <button class="btn"><a href="calculate.html">Calculate</a></button>
+    </div>
+    <img src="bg.png" alt="home" width="800px" height="500px">
+  </section>
+
+  <!--How to use-->
+  <section class="two" id="howItWorks">
+    <div class="div1">
+      <img src="calc.png" alt="home" width="800px" height="500px" class="home">
+      <div class="div2">
+        <b>How It Works:</b><br><br>
+        <span>Input Your Grades:</span><br>
+        <p>Enter the grades you've received for each of your courses. Our calculator supports a variety of grading
+          scales,
+          making it suitable for students worldwide.</p><br>
+        <span>Enter Credit Hours:</span><br>
+        <p> Assign credit hours to each course. This allows our calculator to weigh courses based on their credit value.
+        </p><br>
+        <span>Calculate Your CGPA:</span><br>
+        <p> With the click of a button, our calculator computes your CGPA based on the grades and credit hours you've
+          entered.</p><br>
+
+        <b>Why Use Our CGPA Calculator?</b><br><br>
+        <span>Accuracy:</span><br>
+        <p> Our calculator ensures precise calculations, helping you stay on top of your academic progress.</p>
+        <p> Say goodbye to manual calculations and complicated formulas. Our user-friendly interface makes calculating
+          your CGPA a breeze.</p><br>
+        <span>Flexibility:</span><br>
+        <p> Whether you're calculating your semester GPA or your overall CGPA, our calculator adapts to your needs.</p>
+      </div>
+    </div>
+    <div class="div3">
+      <p>Ready to calculate your CGPA? Simply head to our CGPA calculator page and start inputting your grades and
+        credit hours. Within moments, you'll have your CGPA at your fingertips.</p><br>
+
+      <p>Empower yourself with the knowledge of your academic standing. Try our CGPA calculator today!</p>
+    </div>
+  </section>
+
+  <script>
+    function myMove() {
+      document.getElementById("demo").innerHTML = "CGPA Calculator :";
+    }
+
+    function myOut() {
+      document.getElementById("demo").innerHTML = "CGPA :";
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var howItWorksLink = document.getElementById("howItWorksLink");
+
+      howItWorksLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        var section = document.getElementById("howItWorks");
+        section.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+
+</html>

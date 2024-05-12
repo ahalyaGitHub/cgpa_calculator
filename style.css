@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Inconsolata:wght@200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+body {
+  background-color: #2F3C7E;
+}
+
+.logo {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.nav {
+  background-color: #FBEAEB;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 800px;
+  height: 130px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+ul a:hover {
+  border-bottom: 2px solid black;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 80px;
+}
+
+.one b {
+  color: white;
+  font-size: 50px;
+}
+
+.one img {
+  margin-top: 130px;
+  margin-right: 50px;
+}
+
+.one div {
+  margin-top: 180px;
+  margin-left: 100px;
+}
+
+.one p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 30PX;
+  margin-left: 190px;
+  font-size: 20px;
+  background-color: #FBEAEB;
+  border-radius: 8px;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.two {
+  height: 100vh;
+  color: rgb(125, 168, 247);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.two b {
+  color: rgb(123, 123, 243);
+  font-size: 50px;
+}
+
+.div1 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.div1 img {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+.div2 {
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.div3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 300px;
+}
+
+.div2 {
+  padding-right: 50px;
+}
+
+.two span {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}
+

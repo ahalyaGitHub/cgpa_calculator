@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="nav">
+        <img src="logo.png" alt="logo" width="100px" height="100px" class="logo">
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="showHowToUse()">How to use?</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Calculator-->
+    <div class="one">
+        <div class="two">
+            <!--GPA Calculator-->
+            <div class="gpa_calculator">
+                <div class="three" id="threeGpa">
+                    <p>GPA Calculator</p>
+                    <button onclick="clearCourses()"><img src="close.png" alt="close"></button>
+                </div>
+                <ul id="courseListGpa">
+                    <li>
+                        <label for="sem">Semester:</label>
+                        <input type="number" id="sem" placeholder="Enter semester">
+                    </li>
+                    <li>
+                        <label for="grade">Select the Grade :</label>
+                        <select id="grade">
+                            <option value="grade">Grade</option>
+                            <option value="10">O grade</option>
+                            <option value="9">A+ grade</option>
+                            <option value="8">A grade</option>
+                            <option value="7">B+ grade</option>
+                            <option value="6">B grade</option>
+                            <option value="5">C grade</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="credit">Enter the Credit :</label>
+                        <input type="number" id="credit" placeholder="Enter credit hours">
+                    </li>
+                    <button onclick="addCourses()">Add Courses</button>
+                </ul>
+
+                <div id="displayGPAEntries" class="four"></div>
+
+                <div class="five" id="five">
+                    <button onclick="calculateGPA()">Calculate</button>
+                    <p>GPA : <span id="displayGPA"></span></p>
+                </div>
+            </div>
+
+            <!--CGPA calculator-->
+            <div class="cgpa_calculator">
+                <div class="three" id="threeCgpa">
+                    <p>CGPA Calculator</p>
+                    <button onclick="clearSemesters()"><img src="close.png" alt="close"></button>
+                </div>
+                <ul id="courseListCgpa">
+                    <li>
+                        <label for="semester">Enter the GPA of the Semesters :</label>
+                        <input type="text" id="semester" placeholder="Enter GPA">
+                    </li>
+                    <button onclick="addSemesters()">Add Semesters</button>
+                </ul>
+
+                <div id="displayCGPAEntries" class="four"></div>
+
+                <div class="five" id="five">
+                    <button onclick="calculateCGPA()">Calculate</button>
+                    <p>CGPA : <span id="displayCGPA"></span></p>
+                </div>
+            </div>
+        </div>
+        <img src="gpa-to-Percentage-grade.png" alt="" width="600px" height="350px" class="img">
+    </div>
+
+    <!--How to use-->
+    <section class="section" id="section">
+        <div class="h1">
+            <p>How to use?</p>
+        </div>
+        <div class="eight">
+            <div class="six">
+                <b>Using the GPA Calculator:</b><br>
+                <span>1. Add Courses: </span><br>
+                <p>Select the grade you obtained for each course from the dropdown menu.</p>
+                <p>Enter the credit hours associated with each course.</p>
+                <p>Click the "Add Courses" button to add the course to the list.</p><br>
+                <span>2. Calculate GPA:</span><br>
+                <p>Once you've added all your courses, click the "Calculate" button to compute your GPA.</p>
+                <p>Your GPA will be displayed below the button.</p><br>
+                <span>3. Clear Entries:</span><br>
+                <p>To start over or clear your entries, click the "Clear Courses" button.</p>
+                <p>This will reset the GPA calculator for new calculations.</p>
+            </div>
+            <div class="seven">
+                <b>Using the CGPA Calculator:</b><br>
+                <span>1. Add Semesters:</span><br>
+                <p>Enter the GPA achieved for each semester in the input field provided.</p>
+                <p>Click the "Add Semesters" button to add the semester to the list.</p><br>
+
+                <span>2. Calculate GPA:</span><br>
+                <p>Once you've added all your semesters, click the "Calculate" button to compute your CGPA.</p>
+                <p>Your CGPA will be displayed below the button.</p><br>
+                <span>3. Clear Entries:</span><br>
+                <p>To clear your semester entries, click the "Clear Semesters" button.</p>
+                <p>This will reset the CGPA calculator for new calculations..</p>
+            </div>
+        </div>
+        <div class="nine">
+            <b>Tips for Accuracy:</b><br><br>
+            <p>Ensure you enter the correct grades and credit hours for each course/semester.</p>
+            <p>Review your entries before calculating to avoid errors.</p>
+            <p>Use the tool regularly to keep track of your academic progress.</p>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
